@@ -1,8 +1,13 @@
-const buttons = document.querySelectorAll('button[data-url]');
+document.addEventListener('DOMContentLoaded', () => {
+    const navTriggers = document.querySelectorAll('[data-url]');
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const destination = button.getAttribute('data-url');
-        window.location.href = destination;
+    navTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetUrl = trigger.getAttribute('data-url');
+            if (targetUrl) {
+                window.location.href = targetUrl;
+            }
+        });
     });
 });
