@@ -16,7 +16,7 @@ header {
     padding: 30px 100px;
     display: flex;
     align-items: center;
-    gap: 150px; /* Adjust this value to change space between Portfolio. and Home */
+    gap: 150px;
     z-index: 100;
 }
 
@@ -238,7 +238,7 @@ header {
 }
 
 .contact-container {
-    max-width: 900px; /* Widened from 700px so long emails fit comfortably */
+    max-width: 900px;
     width: 100%;
     text-align: center;
 }
@@ -266,7 +266,7 @@ header {
 
 .contact-card {
     flex: 1;
-    min-width: 340px; /* Increased minimum width to prevent overflow */
+    min-width: 340px;
     background: #fff;
     padding: 25px 30px;
     border-radius: 12px;
@@ -307,7 +307,7 @@ header {
 .contact-card span {
     font-size: 0.95em;
     color: #666;
-    word-break: break-word; /* Prevents text from ever spilling out on smaller screens */
+    word-break: break-word;
 }
 
 /* About Page Styling */
@@ -508,7 +508,6 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
-
 }
 
 /* =========================================
